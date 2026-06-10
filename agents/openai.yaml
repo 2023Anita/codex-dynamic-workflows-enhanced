@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dynamic Workflows Enhanced"
+  short_description: "Plan complex tasks with packets and checks"
+  default_prompt: "Use $codex-dynamic-workflows-enhanced to plan and run a clear dynamic workflow for this task."
