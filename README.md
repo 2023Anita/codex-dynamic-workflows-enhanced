@@ -8,6 +8,14 @@ This project keeps the workflow general-purpose: it can help with software engin
 
 It is not a medical-only workflow. Medical examples are included because doctors, patients, and healthcare beginners often need extra clarity, safety boundaries, and step-by-step guidance.
 
+## Who This Is For
+
+- Developers who need a safer way to run multi-step coding, refactoring, testing, or release tasks.
+- Researchers and writers who need evidence review, drafting, checking, and final synthesis to stay separate.
+- Doctors and clinical educators who want AI help with literature review, teaching material, patient education drafts, or medical AI project documentation.
+- Beginners who need the agent to show the path instead of hiding every action inside one vague answer.
+- Project owners preparing a GitHub repository, README, examples, assets, and publishing checklist.
+
 ## What This Workflow Is
 
 Dynamic workflows turn one broad task into a supervised execution plan:
@@ -37,6 +45,26 @@ Use this workflow when a task has at least two of these traits:
 - the user is a beginner and needs a visible step-by-step path
 
 Do not use the full workflow for tiny tasks. If the task is small, answer directly.
+
+## What It Looks Like In Practice
+
+Use it when the task sounds like this:
+
+- "Help me turn this messy idea into a publishable GitHub project."
+- "Audit this repository and give me a safe implementation plan."
+- "Plan a literature review, evidence table, and teaching outline for clinicians."
+- "Draft patient-facing education content, but make sure it stays educational and needs clinician review."
+- "Help a beginner publish a local project without accidentally leaking secrets or confusing local changes with a pushed repository."
+- "Split this large task into research, implementation, documentation, review, and verification."
+
+The workflow usually produces:
+
+- a short goal and success criteria
+- clear work packets
+- approval gates for risky actions
+- an integration summary
+- verification evidence
+- a final report with remaining risks
 
 ## Example Scenarios
 
@@ -102,6 +130,18 @@ Typical packets:
 - verify no secrets are included
 - explain commit, push, and publish steps before doing them
 
+## Real-World Uses
+
+This workflow has already been useful for:
+
+- Turning an existing generic agent workflow idea into a clearer public GitHub project.
+- Separating "local draft", "committed", "pushed", and "published" states during repository release work.
+- Adding README visuals, examples, install instructions, and safety boundaries before publishing.
+- Structuring GitHub contribution work into candidate discovery, fit assessment, local patching, verification, and PR status tracking.
+- Explaining doctor-facing and patient-facing examples without turning the whole workflow into a medical-only skill.
+
+See [real-world-use-cases.md](examples/real-world-use-cases.md) for concrete examples.
+
 ## Install
 
 Copy this folder into your local Codex skills directory:
@@ -157,7 +197,8 @@ codex-dynamic-workflows-enhanced/
 |-- examples/
 |   |-- beginner-github-project.md
 |   |-- doctor-literature-review.md
-|   `-- patient-education-draft.md
+|   |-- patient-education-draft.md
+|   `-- real-world-use-cases.md
 |-- references/
 |   |-- approval-gates.md
 |   |-- packet-patterns.md
