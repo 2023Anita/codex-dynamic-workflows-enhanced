@@ -195,3 +195,100 @@ Skip the full workflow for:
 - tasks where the user explicitly wants only an answer, not orchestration
 
 Use the workflow when clarity, safety, verification, or multi-step execution matters.
+
+## 7. Physician Teaching Session
+
+Problem:
+
+```text
+A physician wants to prepare a teaching session from recent evidence, but needs the AI to keep search, appraisal, slides, and citation checks separate.
+```
+
+Why dynamic workflow helps:
+
+- Clinical questions need scope control.
+- Teaching messages should not overstate certainty.
+- Citation checks and clinician review should happen before sharing.
+
+Useful packets:
+
+```text
+1. Define the audience and clinical question.
+2. Build a search and source-selection plan.
+3. Create an evidence table.
+4. Draft the teaching outline.
+5. Verify citations and mark uncertainty.
+6. Confirm clinician review before release.
+```
+
+## 8. Hospital Research Secretary Workflow
+
+Problem:
+
+```text
+A hospital research office needs repeatable workflows for abstracts, teaching material, evidence summaries, and GitHub project packaging.
+```
+
+Why dynamic workflow helps:
+
+- It creates a standard path for intake, packet assignment, review, and final reporting.
+- It separates administrative formatting from scientific claims.
+- It makes approval gates visible before external submission.
+
+Useful packets:
+
+```text
+1. Intake project goal and target audience.
+2. Identify required documents and data boundaries.
+3. Draft structured outputs.
+4. Verify citations, formatting, and missing fields.
+5. Prepare final package for human sign-off.
+```
+
+## 9. AI Training Course
+
+Problem:
+
+```text
+An instructor wants to teach doctors and beginners how to use AI agents safely for research, documentation, and GitHub publishing.
+```
+
+Why dynamic workflow helps:
+
+- Learners can see the process instead of only the final answer.
+- The same vocabulary works across medical, writing, and coding scenarios.
+- The examples can become classroom exercises.
+
+Useful packets:
+
+```text
+1. Explain goal and success criteria.
+2. Demonstrate packet planning.
+3. Show approval gates.
+4. Run verification.
+5. Ask learners to adapt a template.
+```
+
+## 10. Open-Source Project Release
+
+Problem:
+
+```text
+A project owner wants to turn a local tool into a public GitHub project with README, examples, images, and safety notes.
+```
+
+Why dynamic workflow helps:
+
+- Public release needs attribution, license, documentation, and link checks.
+- Generated images and docs need to be saved into the repository, not left in a cache folder.
+- Commit and push should happen only after approval.
+
+Useful packets:
+
+```text
+1. Inspect project structure.
+2. Write README and examples.
+3. Generate and save images.
+4. Check links and ignored files.
+5. Commit and push after explicit approval.
+```
