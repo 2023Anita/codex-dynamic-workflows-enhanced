@@ -35,6 +35,10 @@ When using this skill:
 7. Verify with checks appropriate to the risk.
 8. Report completed work, skipped checks, and remaining risks plainly.
 
+## Model Routing
+
+This skill defines routing guidance; it does not install models or change the host's runtime configuration. When the current Codex host supports these model IDs, use the defaults in `references/model-routing.md`. Preserve the assigned reasoning effort, and check the host's available model list instead of inventing an unsupported model ID.
+
 ## Standard Workflow Plan
 
 Use this concise plan shape:

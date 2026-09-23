@@ -41,6 +41,10 @@ A dynamic workflow has three repeating units:
 
 The result is a final report that says what was done, what was checked, and what still needs human judgment.
 
+## Default Model Routing
+
+The skill includes optional model-routing guidance for configured agents: GPT-6 Luna / `max` for bounded, low-risk tasks; GPT-6 Sol / `medium` for coordination and ordinary execution; and GPT-6 Sol / `high` for focused high-risk review. These are instructions, not runtime settings; use only model IDs available on the current Codex host. See [`references/model-routing.md`](references/model-routing.md) for the role map and fallback rule.
+
 ## Visual Examples
 
 ### Workflow Architecture
