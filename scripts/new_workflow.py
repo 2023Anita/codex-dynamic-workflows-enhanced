@@ -134,9 +134,12 @@ Security notes:
         packets_dir = run_dir / "packets"
         results_dir = run_dir / "results"
 
-        # Create directories (parents=True is safe because we validated the path)
-        packets_dir.mkdir(parents=True, exist_ok=False)
-        results_dir.mkdir(parents=True, exist_ok=False)
+        # Claim the workflow directory before writing anything into it.
+        # An existing incomplete workflow must never be reused.
+        root_path.mkdir(parents=True, exist_ok=True)
+        run_dir.mkdir(exist_ok=False)
+        packets_dir.mkdir()
+        results_dir.mkdir()
 
         # Create workflow state
         now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
@@ -223,3 +226,4 @@ Security notes:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
